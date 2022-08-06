@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/c881bf7602.js" crossorigin="anonymous"></script>
+      
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/shree logo.jpg" class="logo" alt="" width="100px" height="100px"> </a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
+            </ul>
+        </div>
+        
+    </section>
+   <section id="prodetails" class="section-p1">
+    <div class="single-pro-image" width="38%">
+    <img src="img/prodpic4.webp" height="87%" id="MainImg" alt="">
+    <div class="small-img-group">
+        <div class="small-img-col">
+            <img src="img/prodpic1.webp" height="100px" width="70px" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="img/prodpic2.webp"  height="100px" width="70px" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="img/prodpic3.webp"  height="100px" width="70px"  class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="img/prodpic4.webp" height="100px" width="70px" class="small-img" alt="">
+        </div>
+    </div>
+</div>
+    <div class="single-pro-details">
+     <h6>Category:Side Lehnga</h6>
+     <h2>Designer Pink Velvet  </h2>
+     <h4>Rs.29,999.00  </h4>
+     <h4>(also available on rent @ Rs.8,999.00 )</h4>
+     <select>
+         <option>Buy</option>
+         <option>Rent</option>
+     </select>
+     <button>Add to Cart</button>
+     <h4>Product Details</h4>
+     <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident maiores praesentium a laboriosi.</span>
+    </div>
+   </section>
+   <hr>
+   <section id="product1" class="section-p1">
+       <h2>New Arrivals</h2>
+       <p>Our new designers Lehengas for this wedding season</p>
+    <div class="pro-container" >
+     
+        <div class="pro">
+            <img src="img/prodpic1.webp" alt="" height="400px" width="260px">
+                <h4>&nbsp;&nbsp; Traditional Embriodered &nbsp;&nbsp;</h4>
+        <span>Rs.29,999.00 &nbsp;&nbsp; &nbsp;&nbsp;</span>
+        <a href="#"><i class="fa fa-shopping-cart "></i></a>
+     </div>
+     <div class="pro">
+        <img src="img/prodpic2.webp" alt="" height="400px" width="260px">
+            <h4>&nbsp;&nbsp; Ravishing Rani Pink &nbsp;&nbsp;</h4>
+    <span>Rs.46,999.00 &nbsp;&nbsp; &nbsp;&nbsp;</span>
+    <a href="#"><i class="fa fa-shopping-cart "></i></a>
+ </div>
+ <div class="pro">
+    <img src="img/prodpic3.webp" alt="" height="400px" width="260px">
+        <h4>&nbsp;&nbsp; Embriodered Velvet &nbsp;&nbsp;</h4>
+<span>Rs.29,999.00 &nbsp;&nbsp; &nbsp;&nbsp;</span>
+<a href="#"><i class="fa fa-shopping-cart "></i></a>
+</div>
+ <div class="pro">
+    <img src="img/prodpic4.webp" alt="" height="400px" width="260px">
+        <h4>&nbsp;&nbsp; Designer Pink Velvet &nbsp;&nbsp;</h4>
+<span>Rs.29,999.00 &nbsp;&nbsp; &nbsp;&nbsp;</span>
+<a href="#"><i class="fa fa-shopping-cart "></i></a>
+</div> 
+   </section>
+      <section id="newsletter" class="section-p1 section-m1">
+          <div class="newstext">
+              <h4>Sign Up for Updates</h4>
+              <p>Get E-mail updates about our latest Lehengas and Designers</p>
+          </div>
+          <div class="form">
+              <input type="text" placeholder="Your email address">
+              <button class="normal">Sign Up</button>
+          </div>
+      </section>
+     <footer class="section-p1">
+         <div class="col">
+             <img class="logo" src="img/shree logo.jpg" width="104 px" height="100 px" alt="">
+             <h4>Contact</h4>
+             <p> <strong>Address:</strong> XYZ Wellington Street,32,New Delhi</p>
+             <p> <strong>Phone:</strong>+91 94444 54444</p>
+             <p> <strong>Hours:</strong> 10:00-18:00 Mon-Sat </p>
+            
+         </div>
+         <div class="col">
+             <h4>About Us</h4>
+             <a href="#">About Us</a>
+             <a href="#">Privacy Policy</a>
+             <a href="#">Terms & Conditions</a>
+             <a href="#">Contact Us</a>
+         </div>
+         <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track Order</a>
+        </div>
+        
+     </footer>
+     <div class="copyright">
+        <p>&copy; 2022 Adarsh Project HTML CSS Shopping site</p>
+    </div>
+    <script>
+        let MainImg=document.getElementById("MainImg");
+        let smallimg=document.getElementsByClassName("small-img");
+        smallimg[0].onclick=function(){
+            MainImg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick=function(){
+            MainImg.src=smallimg[1].src;
+        }
+        smallimg[2].onclick=function(){
+            MainImg.src=smallimg[2].src;
+        }
+        smallimg[3].onclick=function(){
+            MainImg.src=smallimg[3].src;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
